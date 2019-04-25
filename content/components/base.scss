@@ -1,0 +1,79 @@
+@import './variables.scss';
+
+@media all and (max-width: 599px) {
+    html {
+        font-size: 6px;
+    }
+}
+@media all and (min-width: 600px) and (max-width:799px){
+    html {
+        font-size: 8px;
+    }
+}
+@media all and (min-width: 800px) and (max-width:1024px){
+    html {
+        font-size: 10px;
+    }
+}
+@media all and (min-width: 1025px) and (max-width: 1399px){
+    html{
+        font-size: 13px;
+    }
+}
+@media all and (min-width: 1400px){
+    html{
+        font-size: 18px;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    
+    overflow: hidden;
+    
+    * {
+        box-sizing: border-box; 
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+    }
+    
+    h1, h2, h3, h4, h5 {
+        margin: 0;
+        padding: 0;
+    }
+
+    h1, h2 {
+        color: $accentColor;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.25rem;
+    }
+    
+    h3 {
+        margin-bottom: 0.5em;
+    }
+    
+    h5 {
+        margin-top: 0.75em;
+    }
+
+    .MainArea {
+        display: flex;
+        justify-content: space-around;
+        height: 100vh;
+
+        & > * {
+            flex: 1 1 1px;
+        }
+    }
+}
