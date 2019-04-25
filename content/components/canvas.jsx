@@ -121,6 +121,13 @@ class Canvas extends React.Component {
                 onMouseMove={e => this.drag(e)}
                 onMouseUp={e => this.endDrag(e)}
             >
+                <text
+                    x={325}
+                    y={50}
+                    transform="translate(-50%, 0)"
+                >
+                    Right Click to Spawn Hairball
+                </text>
                 <image href={willy}
                     width="700"
                     height="700"
